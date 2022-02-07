@@ -147,7 +147,7 @@ subtitleInput.addEventListener("keyup" ,()=>{
 function AddToList(){
     flag1=true
     flag2=true
-    cardArr.push({title:titleInput.value,subtitle:subtitleInput.value,color:chooseColor})
+    cardArr.unshift({title:titleInput.value,subtitle:subtitleInput.value,color:chooseColor})
     console.log(cardArr)
     renderCard(cardArr)
     currCount++;
