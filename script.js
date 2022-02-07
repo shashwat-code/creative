@@ -98,6 +98,7 @@ const reset = function(){
     drawer.style.width = "0%"
     drawer.style.padding="0% 0% 0% 0%"
     chooseColor='rgb(255,255,255)'
+    addButton.disabled=false
 }
 
 
@@ -126,6 +127,12 @@ titleInput.addEventListener("keyup" ,()=>{
     console.log(flag1,flag2)
 })
 
+document.onkeydown = function(e){
+    if(e.key=="Escape"){
+        reset()
+    }
+}
+
 subtitleInput.addEventListener("keyup" ,()=>{
     if(subtitleInput.value.length==0){
         flag2=true   
@@ -149,7 +156,7 @@ function AddToList(){
     const cnt = document.getElementById("currCount")
     cnt.textContent=currCount
     reset()
-    addButton.disabled=false
+  
     doneBtn.disabled=true
     checkCount()
 }
