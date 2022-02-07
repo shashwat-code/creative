@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="main-content">
+      <div id="filter-tab">
+        <div id="adjust-filter">
+          <div id="filter-content">
+            <h1>Filter By</h1>
+            <div id="search-div">
+              <div id="color-palette">
+                <h3><b>color:</b></h3>
+                <div class="colors"></div>
+              </div>
+              <div id="search-btn">
+                <h3>title/ subtitle :</h3>
+                <input
+                  placeholder="enter title, subtitle"
+                  id="text-input"
+                  class="input-val"
+                />
+              </div>
+            </div>
+            <div id="progress">
+              <progress id="progress-bar" value="0" max="5"></progress>
+              <label id="count-progress"
+                ><span id="currCount">0</span>/5 Creatives</label
+              >
+            </div>
+            <button id="add-btn" onclick="createCard()">
+              <b>+ Add Creatives</b>
+            </button>
+          </div>
+          <div id="cardList"></div>
+        </div>
+      </div>
+      <div id="drawer">
+        <div id="header">
+          <h1>Creative Creation</h1>
+          <button id="close" onclick="closeDrawer()">X</button>
+        </div>
+        <div class="title-tab">
+          <h2 class="heading">title</h2>
+          <input id="title-input" class="input-val" placeholder="title" />
+        </div>
+        <div class="title-tab">
+          <h2 class="heading">subtitle</h2>
+          <input id="subtitle-input" class="input-val" placeholder="subtitle" />
+        </div>
+        <div id="color-palette">
+          <h3><b>color:</b></h3>
+          <div class="colors"></div>
+        </div>
+        <button id="submit" onclick="AddToList()">Done</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,171 @@
+body{
+    font-family:'Comfortaa', cursive;
+    padding:0px;
+    margin: 0px;
+}
+
+#adjust-filter{
+    position: absolute;
+    /* background-color: aqua; */
+    width:56%;
+}
+
+.main-content{
+    padding-top:0%;
+    padding-left: 1%;
+    display: flex;
+    justify-content: space-between;
+}
+#filter-tab{
+    position: relative;
+    width:100%;
+    padding-left: 1rem;
+    height: 100vh;
+    overflow: auto;
+
+}
+
+#drawer{
+    position: fixed;
+    width:0%;
+    right:0px;
+    overflow-x: hidden;
+    height: 100vh;
+    border-left: 0.3rem solid black;
+    /* display: none; */
+}
+
+#filter-content{
+    display:flex;
+    flex-direction: column;
+}
+#search-div{
+    display: flex;
+    position: relative;
+    width:90%;
+}
+
+#color-palette{
+    padding: 0px;
+    width:35%;
+}
+
+#search-div{
+    display: flex;
+    justify-content: space-between;
+}
+
+#search-btn{
+    display: flex;
+    padding-top:1%;
+    width:40%;
+}
+
+
+#search-btn{
+    display: flex;
+    flex-direction: column;
+}
+
+.colors > button{
+    width:1.8rem;
+    height: 1.8rem;
+    margin-right:6%;
+    margin-bottom: 4%;
+    border-radius: 50%;
+    border: none;
+    border: 2px solid black;
+}
+
+.colors > button:focus{
+    width:2.0rem;
+    height: 2.0rem;
+    margin-bottom: 3.5%;
+    margin-right:6.0%;
+    border: 0.3rem solid black;
+}
+
+#progress{
+    margin-top: 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#progress-bar{
+    width:80%;
+    background-image: black;
+    height:2.5rem;
+}
+#count-progress{
+    font-size: 1.2rem;
+}
+
+
+#add-btn{
+    width: 23%;
+    height: 2.3rem;
+    margin-top:1rem;
+    background-color: white;
+    border: none;
+    border: 1px solid black;
+    border-radius: 0.2rem;
+    font-family:'Comfortaa', cursive;
+    font-weight: 900;
+}
+
+
+
+#header{
+    display: flex;
+    justify-content: space-between;
+}
+#close{
+    background:none;
+    border: none;
+    font-size: 1.9rem;
+    font-weight: 100;
+}
+.input-val{
+    width:90%;
+    height:1.7rem;
+    border-radius: 0.4rem;
+    font-family:'Comfortaa', cursive;
+    border: none;
+    border: 2px solid black;
+    padding-left: 1rem;
+    font-size: medium;
+}
+.heading{
+    font-weight: 900;
+}
+#submit{
+    position: absolute;
+    bottom: 4rem;
+    font-family:'Comfortaa', cursive;
+    width:25%;
+    height:2rem;
+    border: 0.13rem solid black;
+    font-size:medium;
+}
+#cardList{
+    padding-top: 2rem;
+}
+.card{
+    margin-top: 1rem;
+    width:70%;
+    height:10rem;
+    border: 1px solid black;
+    border-radius: 1rem;
+}
+.card > h1{
+    padding: 1rem 0rem 0rem 2rem;
+}
+.card >h3{
+    padding: 0.5rem 0rem 0rem 2rem;
+}
+
+
+
+#addbtn:focus{
+
+}
