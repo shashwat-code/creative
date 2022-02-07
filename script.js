@@ -127,7 +127,7 @@ titleInput.addEventListener("keyup" ,()=>{
     console.log(flag1,flag2)
 })
 
-document.onkeydown = function(e){
+window.onkeydown = function(e){
     if(e.key=="Escape"){
         reset()
     }
