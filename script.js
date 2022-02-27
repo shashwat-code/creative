@@ -22,12 +22,27 @@ let currCount=0
 // ,{title: 'xjhvkjd lfgd', subtitle: 'kljfbdsljcg. o ghoi',color:'rgb(93, 65, 87)'}]
 
 // FUNCTION: to fetch color using API
+let arrcolor=[]
 async function colorFetch() {
-    const response = await fetch('https://random-flat-colors.vercel.app/api/random?count=6');
+    const response = await  fetch('https://random-flat-colors.vercel.app/api/random?count=6');
     const data = await response.json();
     let colorArray =  data.colors
+    arrcolor=data.colors
     changeColor(colorArray)
+    return colorArray
 }
+
+await fetch("https://random-flat-colors.vercel.app/api/random?count=6")
+        .then((blob) => blob.json())
+        .then((data) => colorArray.push(...data.colors))
+// var response = [];
+// function colorFetch(){
+//     fetch('https://random-flat-colors.vercel.app/api/random?count=6')
+//     .then(resp => resp.json())
+//     .then(resp => response=resp) 
+// }
+
+
 
 // FUNCTION: to add background color to each button in color-palette div
 function changeColor(colors){
