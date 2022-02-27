@@ -1,7 +1,8 @@
 
 # CREATIVE ✏️ 
  ## About project:
-> It helps user to keep check on ideas and list them down.
+> It helps user to keep check on ideas and list them down. <br />
+Link: [Creative Experience](https://shashwat-code.github.io/creative/)
 ## FEATURES:
  - Its lets user add title, subtitle & colour for a particular card for ideas.
  - User can search using title, subtitle & on basis of colour.
