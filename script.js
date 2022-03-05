@@ -32,9 +32,9 @@ async function colorFetch() {
     return colorArray
 }
 
-await fetch("https://random-flat-colors.vercel.app/api/random?count=6")
-        .then((blob) => blob.json())
-        .then((data) => colorArray.push(...data.colors))
+// await fetch("https://random-flat-colors.vercel.app/api/random?count=6")
+//         .then((blob) => blob.json())
+//         .then((data) => colorArray.push(...data.colors))
 // var response = [];
 // function colorFetch(){
 //     fetch('https://random-flat-colors.vercel.app/api/random?count=6')
